@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlrewrite>
+  <rule>
+    <note>首页</note>
+    <from>^/index.html</from>
+    <to type="forward">/index.html</to>
+  </rule>
+   <rule>
+    <note>登录</note>
+    <from>^/login.html</from>
+    <to type="forward">/login.jsp</to>
+  </rule>
+  
+  <rule>
+    <note>后台登录</note>
+    <from>^/admin_login.html</from>
+    <to type="forward">/loginController.do?login</to>
+  </rule>
+  
+  <rule>
+    <note>员工天地</note>
+    <from>^/center.html</from>
+    <to type="forward">/center.jsp</to>
+  </rule>
+  
+  <rule>
+    <note>集团概况</note>
+    <from>^/group_profile.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0</to>
+  </rule>
+  
+  <rule>
+    <note>公司介绍</note>
+    <from>^/introduction.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=0</to>
+  </rule>
+  
+  <rule>
+    <note>发展历程</note>
+    <from>^/development.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=1</to>
+  </rule>
+  
+  <rule>
+    <note>企业文化</note>
+    <from>^/culture.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=2</to>
+  </rule>
+  
+  <rule>
+    <note>组织结构</note>
+    <from>^/structure.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=3</to>
+  </rule>
+  
+  <rule>
+    <note>地理位置</note>
+    <from>^/position.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=4</to>
+  </rule>
+  
+  <rule>
+    <note>技术理念</note>
+    <from>^/technology.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=5</to>
+  </rule>
+  
+  <rule>
+    <note>管理层</note>
+    <from>^/management.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=0&amp;menu3=6</to>
+  </rule>
+  
+  <rule>
+  	<note>子分公司</note>
+  	<from>^/child_company.html</from>
+  	<to type="forward">/about/index.jsp?menu1=1&amp;menu2=1</to>
+  </rule>
+   <rule>
+    <note>分公司1</note>
+    <from>^/child_first.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=1&amp;menu3=0</to>
+  </rule>
+  <rule>
+    <note>分公司2</note>
+    <from>^/child_second.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=1&amp;menu3=1</to>
+  </rule>
+  <rule>
+    <note>分公司3</note>
+    <from>^/child_three.html</from>
+    <to type="forward">/about/index.jsp?menu1=1&amp;menu2=1&amp;menu3=2</to>
+  </rule>
+  <rule>
+    <note>公司新闻</note>
+    <from>^/news.html</from>
+    <to type="forward">/news/index.jsp?menu1=2&amp;menu2=0</to>
+  </rule> 
+   <rule>
+    <note>公司新闻详情</note>
+    <from>^/news_details/([A-Za-z0-9]+).html</from>
+    <to type="forward">/news/detail.jsp?menu1=2&amp;menu2=0&amp;contId=$1</to>
+  </rule>
+    <rule>
+    <note>行业动态</note>
+    <from>^/industry.html</from>
+    <to type="forward">/news/index.jsp?menu1=2&amp;menu2=1</to>
+  </rule>
+   <rule>
+    <note>行业动态详情</note>
+    <from>^/industry_details/([A-Za-z0-9]+).html</from>
+    <to type="forward">/news/detail.jsp?menu1=2&amp;menu2=1&amp;contId=$1</to>
+  </rule>
+   <rule>
+    <note>出版刊物</note>
+    <from>^/publications.html</from>
+    <to type="forward">/news/index.jsp?menu1=2&amp;menu2=2</to>
+  </rule>
+  
+  <rule>
+    <note>合成邮报</note>
+    <from>^/composite_post.html</from>
+    <to type="forward">/news/index.jsp?menu1=2&amp;menu2=2&amp;menu3=0</to>
+  </rule>
+  
+   <rule>
+    <note>煤油海金</note>
+    <from>^/kerosene.html</from>
+    <to type="forward">/news/index.jsp?menu1=2&amp;menu2=2&amp;menu3=1</to>
+  </rule>
+  
+ <rule>
+    <note>合成油世界</note>
+    <from>^/cogasin.html</from>
+    <to type="forward">/news/index.jsp?menu1=2&amp;menu2=2&amp;menu3=2</to>
+  </rule>
+  <rule>
+    <note>技术研究</note>
+    <from>^/technical_study.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0</to>
+  </rule> 
+  
+   <rule>
+    <note>水处理技术研究</note>
+    <from>^/water.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=0</to>
+  </rule>
+ 
+  
+  <rule>
+    <note>油品加工技术研究</note>
+    <from>^/oil_processing.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=1</to>
+  </rule>
+  
+   <rule>
+    <note>分析测试技术研究</note>
+    <from>^/analysis.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=2</to>
+  </rule>
+  
+  <rule>
+    <note>工艺及集成技术研究</note>
+    <from>^/integration.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=3</to>
+  </rule>
+  
+  <rule>
+    <note>精细化工技术研究</note>
+    <from>^/delicacy.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=4</to>
+  </rule>
+  
+  <rule>
+    <note>分机液化技术研究</note>
+    <from>^/extension.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=5</to>
+  </rule>
+  
+  <rule>
+    <note>煤气化技术研究</note>
+    <from>/gas.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=0&amp;menu3=6</to>
+  </rule>
+  
+  <rule>
+    <note>文章及出版物</note>
+    <from>^/article.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=1</to>
+  </rule>
+  
+  <rule>
+    <note>公开课</note>
+    <from>^/open_class.html</from>
+    <to type="forward">/tecResearch/index.jsp?menu1=3&amp;menu2=2</to>
+  </rule>
+  
+  <rule>
+    <note>催化剂</note>
+    <from>^/catalyzer.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=0</to>
+  </rule>
+  
+  <rule>
+    <note>技术产品研发历程</note>
+    <from>^/product.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=0&amp;menu3=0</to>
+  </rule>
+  
+  <rule>
+    <note>技术优势</note>
+    <from>^/superiority.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=0&amp;menu3=1</to>
+  </rule>
+  
+  <rule>
+    <note>工程技术服务</note>
+    <from>^/project_service.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=1</to>
+  </rule>
+  
+  <rule>
+    <note>技术服务</note>
+    <from>^/technical_service.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=2</to>
+  </rule>
+  
+  <rule>
+    <note>产业化建设</note>
+    <from>^/build.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3</to>
+  </rule>
+  
+  <rule>
+    <note>潞安示范项目</note>
+    <from>^/luan_project.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3&amp;menu3=0</to>
+  </rule>
+  
+  <rule>
+    <note>伊泰示范项目</note>
+    <from>^/yitai_project.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3&amp;menu3=1</to>
+  </rule>
+  <rule>
+    <note>神华示范项目</note>
+    <from>^/shenhua_project.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3&amp;menu3=2</to>
+  </rule>
+  <rule>
+    <note>精细化学品项目</note>
+    <from>^/delicacy_project.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3&amp;menu3=3</to>
+  </rule>
+  
+  <rule>
+    <note>潞安一体化项目</note>
+    <from>^/luan_integration.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3&amp;menu3=4</to>
+  </rule>
+  
+  <rule>
+    <note>神华宁煤项目</note>
+    <from>^/shenhua_ningmei.html</from>
+    <to type="forward">/proServices/index.jsp?menu1=4&amp;menu2=3&amp;menu3=5</to>
+  </rule>
+  
+  <rule>
+    <note>持续发展</note>
+    <from>^/sustained_development.html</from>
+    <to type="forward">/socialRes/index.jsp?menu1=5&amp;menu2=0</to>
+  </rule>
+  
+   <rule>
+    <note>社会贡献</note>
+    <from>^/society.html</from>
+    <to type="forward">/socialRes/index.jsp?menu1=5&amp;menu2=1</to>
+  </rule>
+  <rule>
+    <note>员工建设</note>
+    <from>^/employee_build.html</from>
+    <to type="forward">/socialRes/index.jsp?menu1=5&amp;menu2=2</to>
+  </rule>
+  
+  <rule>
+    <note>员工培训</note>
+    <from>^/employee_learn.html</from>
+    <to type="forward">/socialRes/index.jsp?menu1=5&amp;menu2=2&amp;menu3=0</to>
+  </rule>
+  
+  <rule>
+    <note>人才招聘</note>
+    <from>^/alent_recruitment.html</from>
+    <to type="forward">/joinus/index.jsp?menu1=6&amp;menu2=0</to>
+  </rule>
+  
+  <rule>
+    <note>招聘职位</note>
+    <from>^/jobs.html</from>
+    <to type="forward">/joinus/index.jsp?menu1=6&amp;menu2=1</to>
+  </rule>
+   
+  <rule>
+    <note>合作交流</note>
+    <from>^/cooperation.html</from>
+    <to type="forward">/joinus/index.jsp?menu1=6&amp;menu2=2</to>
+  </rule>
+  
+  <rule>
+    <note>联系我们</note>
+    <from>^/contact_us.html</from>
+    <to type="forward">/joinus/index.jsp?menu1=6&amp;menu2=3</to>
+  </rule>
+  
+</urlrewrite>
